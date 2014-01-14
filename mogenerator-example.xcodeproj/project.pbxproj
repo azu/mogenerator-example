@@ -25,6 +25,8 @@
 		7378FEA518857ADA00C29491 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7378FE8018857ADA00C29491 /* CoreData.framework */; };
 		7378FEAD18857ADA00C29491 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7378FEAB18857ADA00C29491 /* InfoPlist.strings */; };
 		7378FEAF18857ADA00C29491 /* mogenerator_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7378FEAE18857ADA00C29491 /* mogenerator_exampleTests.m */; };
+		7378FEBD1885801000C29491 /* _Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 7378FEBA1885801000C29491 /* _Event.m */; };
+		7378FEBE1885801000C29491 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 7378FEBC1885801000C29491 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		7378FEAA18857ADA00C29491 /* mogenerator-exampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mogenerator-exampleTests-Info.plist"; sourceTree = "<group>"; };
 		7378FEAC18857ADA00C29491 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7378FEAE18857ADA00C29491 /* mogenerator_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mogenerator_exampleTests.m; sourceTree = "<group>"; };
+		7378FEB91885801000C29491 /* _Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Event.h; sourceTree = "<group>"; };
+		7378FEBA1885801000C29491 /* _Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Event.m; sourceTree = "<group>"; };
+		7378FEBB1885801000C29491 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		7378FEBC1885801000C29491 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 		7378FE8218857ADA00C29491 /* mogenerator-example */ = {
 			isa = PBXGroup;
 			children = (
+				7378FEB81885801000C29491 /* models */,
 				7378FE8B18857ADA00C29491 /* AppDelegate.h */,
 				7378FE8C18857ADA00C29491 /* AppDelegate.m */,
 				7378FE8E18857ADA00C29491 /* Main.storyboard */,
@@ -164,6 +171,17 @@
 				7378FEAB18857ADA00C29491 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7378FEB81885801000C29491 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7378FEB91885801000C29491 /* _Event.h */,
+				7378FEBA1885801000C29491 /* _Event.m */,
+				7378FEBB1885801000C29491 /* Event.h */,
+				7378FEBC1885801000C29491 /* Event.m */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +285,9 @@
 				7378FE9618857ADA00C29491 /* MasterViewController.m in Sources */,
 				7378FE8D18857ADA00C29491 /* AppDelegate.m in Sources */,
 				7378FE9318857ADA00C29491 /* mogenerator_example.xcdatamodeld in Sources */,
+				7378FEBD1885801000C29491 /* _Event.m in Sources */,
 				7378FE8918857ADA00C29491 /* main.m in Sources */,
+				7378FEBE1885801000C29491 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +496,7 @@
 				7378FEB418857ADA00C29491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7378FEB518857ADA00C29491 /* Build configuration list for PBXNativeTarget "mogenerator-exampleTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +505,7 @@
 				7378FEB718857ADA00C29491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
